@@ -78,4 +78,4 @@ def predict():
         return render_template('index.html', error=str(e))
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run()
