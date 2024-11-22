@@ -13,12 +13,12 @@ app = Flask(__name__)
 # Load the LSTM model
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, 'models', 'best_lstm_model.h5')
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# model_path = os.path.join(BASE_DIR, 'models', 'best_lstm_model.h5')
 
-lstm_model = load_model(model_path)
+# lstm_model = load_model(model_path)
 
-# lstm_model = load_model('models/best_lstm_model.h5')
+lstm_model = load_model('models/best_lstm_model.h5')
 
 # Load and preprocess the dataset for label encoding
 dataset = pd.read_csv('dataset.csv',encoding='utf-8')
